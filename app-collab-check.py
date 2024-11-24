@@ -149,7 +149,16 @@ def clean_translation(text):
 def trans_image_ocr(image_bytes,model,tokenizer):
     """Perform OCR on an image, handle both Arabic and English text with proper formatting."""
     try:
-        reader = easyocr.Reader(['ar', 'en'])
+        
+        if model:
+            # Extract the model name from the configuration
+            model_name = model.config._name_or_path
+
+            # Extract the source language (before the dash '-')
+            source_lang = model_name.split("-")[3]  # Assumes format: opus-mt-<source>-<target>
+            print(f"Source language dynamically extracted: {source_lang}")
+
+        reader = easyocr.Reader([source_lang, 'en'])
         img_stream = BytesIO(image_bytes)
         image = Image.open(img_stream).convert("RGB")
         
@@ -505,6 +514,10 @@ def translate_pdf(file_path, translation_id, initial_format):
     }
     translations[translation_id] = translation_details
     save_translations(translations)
+    
+    # Pass detected_lang to trans_image_ocr
+    # return trans_image_ocr(None, model, tokenizer)
+
  
  
 
