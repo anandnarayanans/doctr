@@ -1,0 +1,703 @@
+/* Dark mode styles */
+
+.incident-toolbar {
+  background-color: #000872;
+  /* background: linear-gradient(to right, #1c005c, #5656ff,#3e84fe,#416aff);  */
+  /* background-color: rgb(18, 201, 201); */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
+    0 6px 20px rgba(255, 255, 255, 0.19); /* Adds shadow effect */
+}
+.vertical-divider {
+  height: 50px; /* Increase this value for more height */
+  width: 2px;
+  background-color: #adadad;
+  margin: 0 20px; /* Add spacing around the divider */
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid #b30000;
+}
+.logo {
+  width: 150px;
+  height: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h1 span {
+  font-size: 16px;
+  color: gray;
+  font-weight: normal;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.checkbox {
+  align-self: flex-start;
+}
+
+.folder-icon {
+  font-size: 30px;
+  color: #900000;
+  margin-left: 67px;
+  bottom: 5px;
+}
+
+.folder-details {
+  align-self: flex-start;
+}
+
+.folder-details h3 {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.folder-icon {
+  font-size: 30px;
+  color: #900000;
+  margin-left: 67px;
+  bottom: 5px;
+}
+
+.folder-details {
+  align-self: flex-start;
+}
+
+.folder-details h3 {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.folder-details p {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 5px;
+}
+.checkbox {
+  align-self: flex-start;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.folder-details p {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.folder-card {
+  width: 40%;
+  height: 60%;
+  margin-right: 30px;
+  display: flex;
+
+  justify-content: left;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.folder-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 40%;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.supported-text {
+  color: grey;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* .recent-files,
+.searchbar,
+.searchbar {
+  margin-right: 20px;
+  margin-left:20px;
+} */
+
+.plus-icon {
+  font-size: 26px;
+  font-weight: 400;
+  margin-right: 8px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.translate-btn {
+  background-color: #900000 !important;
+  color: white !important;
+  border-radius: 11px 11px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+mat-icon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.mat-form-field {
+  width: 80%;
+  margin-left: 20px;
+}
+
+.translate-button mat-icon {
+  margin-right: 8px;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+.container {
+  padding: 20px;
+  background-color: #f5f6fa;
+  justify-content: center;
+}
+.translate-section {
+  width: 86%; /* Adjust the width to match the design */
+  padding: 50px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like appearance */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+
+  text-align: center;
+  margin: 0 auto;
+}
+.incident-toolbar {
+  background-color: #020072;
+  color: rgb(0, 0, 0);
+}
+
+/* Button styles for Angular Material icons */
+button[mat-icon-button] {
+  color: white;
+}
+
+/* Specific toolbar button styles */
+.incident-toolbar button[mat-icon-button] {
+  margin-left: auto; /* Align button to the right */
+  color: inherit; /* Inherit color from toolbar */
+}
+
+/* styles.css or component-specific stylesheet */
+/* 
+.table-container {
+  margin: 40px;
+  border-radius: 60px;
+} */
+
+.mat-table {
+  width: 80%;
+}
+
+.mat-header-cell,
+.mat-cell {
+  padding: 16px;
+  text-align: left;
+}
+
+.mat-header-row {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.mat-row:nth-child(even) {
+  background-color: black;
+}
+
+.mat-row:hover {
+  background-color: black;
+}
+
+.mat-elevation-z8 {
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a card-like appearance */
+  /* border-radius: 10px; Optional: round the table's corners */
+  /* overflow: hidden; Ensures that the content respects the rounded corners */
+}
+
+body {
+  background-size: cover;
+  border-radius: 0%;
+  background-repeat: no-repeat;
+
+  font-weight: bold;
+  height: 2030px;
+  /* background-image: url("https://imagetolink.com/ib/fEBA9zUM8n.jpg"); */
+  /* background-color: rgb(0, 0, 0); */
+  color: rgb(0, 0, 0); /* Ensures all text is white */
+  background-position: center;
+  font-family: Roboto;
+  background: linear-gradient(to right, #1c005c, #5656ff, #3e84fe, #416aff);
+}
+
+body {
+  position: relative;
+  font-family: Roboto;
+  color: rgb(255, 255, 255); /* Ensures all text is white */
+  font-weight: bold;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh; /* Ensure the PDF viewer takes up the full height of the viewport */
+}
+
+/* .right-side {
+  width: 50%;
+  height: 100vh;
+  overflow: auto;
+}
+ */
+
+.full-height {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 40, 240, 0.2); /* Blue transparent background */
+}
+
+.file-drop-zone {
+  border: 2px dashed #5cdeff; /* Angular Material primary color */
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  height: auto;
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  background-color: rgba(53, 137, 255, 0.2); /* Blue transparent background */
+}
+
+.file-drop-zone:hover {
+  background-color: #3e69e1;
+  color: rgb(0, 0, 0);
+}
+
+.upload-icon {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.mat-card-content h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  background-color: rgba(161, 160, 221, 0.8);
+  font-weight: bold;
+}
+
+.mat-raised-button {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* .transparent-button {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ) !important;
+  color: #ffffff !important; 
+  border: 2px solid #0a0077 !important; 
+  position: relative; 
+  overflow: hidden; 
+} */
+.transparent-button {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.02
+  ) !important; /* Dark red transparent background */
+  color: #900000 !important; /* Dark red text color */
+  border: 2px solid #900000 !important; /* Dark red border */
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden; /* Ensure the glow effect stays within the button bounds */
+}
+
+.transparent-button1 {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.02
+  ) !important; /* Dark red transparent background */
+  color: #900000 !important; /* Dark red text color */
+  border: 2px solid #900000 !important; /* Dark red border */
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden; /* Ensure the glow effect stays within the button bounds */
+}
+
+/* .transparent-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  animation: glow 2s infinite alternate;
+} */
+
+/* @keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(13, 0, 88, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(117, 218, 255, 0);
+  }
+} */
+/* 
+.transparent-button::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #000564;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.transparent-button:hover::after {
+  opacity: 1;
+} */
+.transparent-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(144, 0, 0, 0.6); /* Dark red glow */
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(144, 0, 0, 0); /* Fades out smoothly */
+  }
+}
+
+.transparent-button::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #900000; /* Dark red border */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.transparent-button:hover::after {
+  opacity: 1;
+}
+
+.mat-progress-bar {
+  height: 90px;
+  width: 100%;
+}
+
+.common-upload-section {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 55px;
+}
+.common-upload-section1 {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 55px;
+}
+
+.mt-3 {
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.w-100 {
+  width: 70%;
+  margin-left: 90px;
+}
+
+.incident-toolbar {
+  background-color: #000872;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
+    0 6px 20px rgba(255, 255, 255, 0.19); /* Adds shadow effect */
+}
+
+.incident-toolbar1 {
+  background-color: #e6efe8;
+  color: rgb(179, 179, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
+    0 6px 20px rgba(255, 255, 255, 0.19); /* Adds shadow effect */
+}
+
+.incident-toolbar2 {
+  color: rgb(27, 0, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  font-weight: bold;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(193, 199, 255, 0.2),
+    0 6px 20px rgba(255, 255, 255, 0.19); /* Adds shadow effect */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+/* Custom styles for animated striped progress bar */
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress {
+  position: relative;
+  height: 12px;
+  background-color: #900000;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+/* .progress-bar {
+  position: relative;
+  height: 100%;
+  background-color: rgba(30, 0, 255, 0.37);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: progress-bar-stripes 1s linear infinite;
+  transition: width 0.6s ease;
+} */
+.progress-bar {
+  position: relative;
+  height: 100%;
+  background-color: rgba(144, 0, 0, 0.37); /* Dark red background */
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    /* White stripes */ transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: progress-bar-stripes 1s linear infinite;
+  transition: width 0.6s ease;
+  padding: 0 2rem; /* Add padding on both sides for text visibility */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+.progress-label {
+  position: absolute;
+  right: 0.5rem; /* Ensure it's always within the bar */
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-family: roboto;
+  color: rgb(255, 255, 255);
+  left: 50%; /* Center the text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  top: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ensure text is centered horizontally and vertically */
+}
+
+.upload-progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transparent-button {
+  flex: 0 0 auto; /* Allow the button to take up its content width */
+
+  height: 23px;
+  margin-bottom: 2px;
+}
+
+.progress-container {
+  flex: 1 1 auto; /* Allow the progress bar to take up the remaining space */
+  margin-left: 10px; /* Add some space between the button and the progress bar */
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%; /* Ensure the container takes up the full height */
+}
+
+.mat-spinner {
+  display: block;
+}
+/* .spinner {
+  border: 4px solid rgba(255, 254, 254, 0.1);
+  border-left-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.spinner {
+  border: 4px solid rgba(144, 0, 0, 0.1); /* Light version of #900000 for subtle transparency */
+  border-left-color: #900000; /* Dark red for the spinning part */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
